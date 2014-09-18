@@ -41,7 +41,7 @@
                 ["rank","Output doesn't contain rank"]
                 ],
             "equals": [
-                [["synonyms",['Barnadesia', 'Barnadesia Mutis']],"Fails that results contains correct synonyms"]
+                [["synonyms",["Barnadesia", "Barnadesia Mutis"]],"Fails that results contains correct synonyms"]
                 ]
         }
     }
