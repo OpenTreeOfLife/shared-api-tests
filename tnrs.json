@@ -32,7 +32,7 @@
         "tests": {
              "of_type": ["dict","Response is of wrong type"],
              "equals": [
-                 [["LIFE","['All life']"],"Fails that results contains All life - Mass extinction!!!"]
+                 [["LIFE",['All life']],"Fails that results contains All life - Mass extinction!!!"]
                  ],
              "contains": [
                  ["FUNGI","Doesn't contain FUNGI"]
