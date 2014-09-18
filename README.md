@@ -37,7 +37,7 @@ A descriptive name wrapping a set of tests.
 test\_function
 --------------
 
-The name of a wrapping function. Function names were designed to be shared across R, Python, and Ruby.  These map 1:1 with an API URL.  The naming convention is [HERE].
+The name of a binding function. Function names were designed to be shared across R, Python, and Ruby.  They map 1:1 with an API URL.  The naming convention is referenced on [the open tree wiki][4].
 
 tests
 -----
@@ -154,5 +154,6 @@ BSD
 [1]: https://github.com/OpenTreeOfLife/pyopentree
 [2]: https://github.com/fmichonneau/rotl
 [3]: https://github.com/SpeciesFileGroup/bark 
+[4]: https://github.com/OpenTreeOfLife/opentree/wiki/Libraries-for-working-with-opentree-in-various-languages-%28service-bindings-and-wrappers,-etc.%29
 
 
