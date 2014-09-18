@@ -44,7 +44,7 @@
     },
     "test_mrca_non_existing_empty": {
         "test_function": "tol_mrca",
-        "test_input": "null",
+        "test_input": {},
         "tests": {
             "error": [
                 ["ValueError","Return wrong kind of error, or did return error"]
