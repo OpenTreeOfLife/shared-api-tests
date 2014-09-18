@@ -1,5 +1,3 @@
-
-
 shared-api-tests
 ================
 
@@ -22,11 +20,13 @@ format
 There is one file for each API: taxonomy, trns, graph\_of\_life, studies, and tree\_of\_life. Within each file there are multiple named "tests". The basic format for an individual "test" (or testing context) is:
 
 ```json
+{
   "test_name": {
-          "test_function": "test_function_name",
-          "test_input": { dictionary_of_input },
-          "tests": { dictionary_of_tests }
-      }
+    "test_function": "test_function_name",
+    "test_input": { dictionary_of_input },
+    "tests": { dictionary_of_tests }
+  }
+}
 ```
 
 test\_name
@@ -42,7 +42,7 @@ The name of a wrapping function. Function names were designed to be shared acros
 tests
 -----
 
-A dictionary of tests organized by type. All tests are in the format:
+A dictionary of tests organized by type. All individual tests are in the format. 
 
 ```
 [specification, message]
@@ -50,11 +50,17 @@ A dictionary of tests organized by type. All tests are in the format:
 
 The _message_ is the message to display when the tests *fails*.
 
+Some types of tests allow for multiple tests to be defined.
+
+The following types of tests are available
+* *contains* - Tests that a key is present in the response.
+* *equals* - Tests that one or more keys in the response return a specific value.
+* *deep_equals* - Tests that s in the response return a specific value.
+* *error* - Test that <what> <raises?> an error.
+* *length_greater_than* - Tests that the value for a given key contains greater than N items.
+* *of_type* - Tests that the response provided is of the specified type.
 
 ### contains
-
-_Tests that a key is present in the response._
-
 Value is an Array of Arrays. Each inner Array defines a response key to check for and message to provide on failure of the test.
 
 ```json
@@ -65,9 +71,6 @@ Value is an Array of Arrays. Each inner Array defines a response key to check fo
 ```
 
 ### equals
-
-_Tests that one or more keys in the response return a specific value._
-
 Value is an Array of Arrays.  Each inner Array contains an array with a key/value pair, and a message.
 
 ```json
@@ -78,12 +81,10 @@ Value is an Array of Arrays.  Each inner Array contains an array with a key/valu
 ```
 
 ### deep\_equals
-
-_Tests that s in the response return a specific value._
-
 Value is an Array of Arrays.  Each inner Array contains: 
 
 ```json
+{
 [
   [ 
    [ ["key1","key2", "key3"], "value'], "message" ]
@@ -101,9 +102,6 @@ This is is translated to the test:
 ```
 
 ### error
-
-_Test that <what> <raises?> an error._
-
 Value is an Array of Arrays, each inner Array.
 
 ```
@@ -114,9 +112,6 @@ Where ErrorName is the class in {what language} that is raised.
 
 
 ### length\_greater\_than
-
-_Tests that the value for a given key contains greater than N items._
-
 Value is an Array of Arrays, each inner Array looks like
 
 ```json
@@ -126,9 +121,6 @@ Value is an Array of Arrays, each inner Array looks like
 ```
 
 ### of\_type
-
-_Tests that the response provided is of the specified type._
-
 Value is an Array with two values:
 
 ```json
