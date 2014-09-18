@@ -1,7 +1,7 @@
 shared-api-tests
 ================
 
-This repository contains a set of .json files that specify conditions for unit tests on the OT API. The specifications are intended to be used across languages, at present wrappers in [R][2], [Python][1], and [Ruby][3] are using them.
+This repository contains a set of .json files that specify conditions for unit tests on the OT API. The specifications are intended to be used across languages, at present wrappers in [R][2], [Python][1], and [Ruby][3] are using them.  Further discussion is [available on the open tree wiki][4]
 
 usage
 =====
