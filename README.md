@@ -42,7 +42,7 @@ The name of a wrapping function. Function names were designed to be shared acros
 tests
 -----
 
-A dictionary of tests organized by type. All individual tests are in the format. 
+A dictionary of tests organized by type. Most of the individual tests are in the format: 
 
 ```
 [specification, message]
@@ -52,13 +52,22 @@ The _message_ is the message to display when the tests *fails*.
 
 Some types of tests allow for multiple tests to be defined.
 
-The following types of tests are available
+The following types of tests are available:
 * *contains* - Tests that a key is present in the response.
+* *contains_error* - Tests that the response contains the a key "error".
+* *deep_equals* - Tests that a nested key in the response return a specific value.
 * *equals* - Tests that one or more keys in the response return a specific value.
-* *deep_equals* - Tests that s in the response return a specific value.
-* *error* - Test that <what> <raises?> an error.
 * *length_greater_than* - Tests that the value for a given key contains greater than N items.
 * *of_type* - Tests that the response provided is of the specified type.
+* *parameters_error* - Tests that the request object has detected, prior to askign for a response, that the parameters passed are invalid. 
+
+### parameters\_error
+
+Value is a string.
+
+```
+ "message'
+```
 
 ### contains
 Value is an Array of Arrays. Each inner Array defines a response key to check for and message to provide on failure of the test.
@@ -101,11 +110,11 @@ This is is translated to the test:
   response[key1][key2][key3] == value
 ```
 
-### error
-Value is an Array of Arrays, each inner Array.
+### contains_error
+Points to message.
 
 ```
-  ["ErrorName","message"]
+  "message"
 ```
 
 Where ErrorName is the class in {what language} that is raised.
