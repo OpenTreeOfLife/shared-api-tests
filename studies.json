@@ -9,7 +9,7 @@
                 ["matched_studies","Output doesn't contain matched_studies"]
                 ],
             "equals": [
-                [["matched_studies","[]"],"Fails that results are actually empty"]
+                [["matched_studies",[]],"Fails that results are actually empty"]
                 ]
         }
     },
