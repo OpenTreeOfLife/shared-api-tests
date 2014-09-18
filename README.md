@@ -3,7 +3,16 @@
 shared-api-tests
 ================
 
-This repository contains a set of .json files that specify conditions for unit tests on the OT API.  The specifications are intended to be used across languages, at present wrappers in R, Python,and Ruby are using them.
+This repository contains a set of .json files that specify conditions for unit tests on the OT API. The specifications are intended to be used across languages, at present wrappers in R, Python,and Ruby are using them.
+
+usage
+=====
+
+If you want curl the raw files directly you can use the raw.gihubusercontent.com link like:
+
+```
+  https://raw.githubusercontent.com/OpenTreeOfLife/shared-api-tests/master/graph_of_life.json
+```
 
 format
 ======
