@@ -39,6 +39,19 @@
                  ]
         }
     },
+    "test_contexts_broken_delib": {
+        "test_function": "tnrs_contexts",
+        "test_input": {},
+        "tests": {
+             "of_type": ["dict","Response is of wrong type"],
+             "equals": [
+                 [["LIFE",["Alllife"]],"Fails that results contains All life - Mass extinction!!!"]
+                 ],
+             "contains": [
+                 ["FUNGI","Doesn't contain FUNGI"]
+                 ]
+        }
+    },
     "test_infer_context": {
         "test_function": "tnrs_infer_context",
         "test_input": {"names":["Pan","Homo","Mus","Bufo","Drosophila"]},
