@@ -4,8 +4,8 @@
         "test_input": {"names":["Aster","Symphyotrichum","Erigeron","Barnadesia"]},
         "tests": {
              "of_type": ["dict","Response is of wrong type"],
-             "equals": [
-                 [["'results'][0]['id'","'Barnadesia'"],"Fails that results contains Barnadesia"]
+             "deep_equals": [
+                 [['results', 0, "id"], "Barnadesia"],"Fails that results contains Barnadesia"]
                  ],
              "contains": [
                  ["unambiguous_name_ids","Doesn't contain unambiguous_name_ids"]
@@ -18,8 +18,8 @@
                        "do_approximate_matching":"True"},
         "tests": {
              "of_type": ["dict","Response is of wrong type"],
-             "equals": [
-                 [["'results'][0]['id'","'Barnadesia'"],"Fails that results contains Barnadesia"]
+             "deep_equals": [
+                 [["results", 0, "id"] ,"Barnadesia"],"Fails that results contains Barnadesia"]
                  ],
              "contains": [
                  ["unambiguous_name_ids","Doesn't contain unambiguous_name_ids"]
@@ -32,7 +32,7 @@
         "tests": {
              "of_type": ["dict","Response is of wrong type"],
              "equals": [
-                 [["'LIFE'","['All life']"],"Fails that results contains All life - Mass extinction!!!"]
+                 [["LIFE","['All life']"],"Fails that results contains All life - Mass extinction!!!"]
                  ],
              "contains": [
                  ["FUNGI","Doesn't contain FUNGI"]
@@ -45,7 +45,7 @@
         "tests": {
              "of_type": ["dict","Response is of wrong type"],
              "equals": [
-                 [["'context_name'","'Tetrapods'"],"We should have found these taxa were terapods. We didn't."]
+                 [["context_name","Tetrapods"],"We should have found these taxa were terapods. We didn't."]
                  ],
              "contains": [
                  ["context_ott_id","Doesn't contain context_ott_id"]

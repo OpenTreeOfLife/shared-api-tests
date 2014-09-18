@@ -1,29 +1,29 @@
 {
     "test_find_studies": {
         "test_function": "studies_find_studies",
-        "test_input": {"study_property":"'ot:studyId'",
-                       "value":"'pg_719'",
+        "test_input": {"property":"ot:studyId",
+                       "value":"pg_719",
                        "verbose":"True"},
         "tests": {
             "contains": [
                 ["matched_studies","Output doesn't contain matched_studies"]
                 ],
             "equals": [
-                [["'matched_studies'","[]"],"Fails that results are actually empty"]
+                [["matched_studies","[]"],"Fails that results are actually empty"]
                 ]
         }
     },
     "test_find_trees": {
         "test_function": "studies_find_trees",
-        "test_input": {"study_property":"'ot:ottTaxonName'",
-                       "value":"'Garcinia'"
+        "test_input": {"property":"ot:ottTaxonName",
+                       "value":"Garcinia"
                       },
         "tests": {
             "contains": [
                 ["matched_studies","Output doesn't contain matched_studies"]
                 ],
-            "len_gt": [
-                [["'matched_studies'",1],"Fail - results are actually empty"]
+            "length_greater_than": [
+                [["matched_studies",1],"Fail - results are actually empty"]
                 ]
         }
     },
@@ -38,7 +38,7 @@
     },
     "test_get_study": {
         "test_function": "get_study",
-        "test_input": {"study_id":"'pg_1144'"},
+        "test_input": {"study_id":"pg_1144"},
         "tests": {
             "contains": [
                 ["data","Output doesn't contain data"]
@@ -47,8 +47,8 @@
     },
     "test_get_tree": {
         "test_function": "get_study_tree",
-        "test_input": {"study_id":"'pg_1144'",
-                       "tree_id":"'tree2324'"
+        "test_input": {"study_id":"pg_1144",
+                       "tree_id":"tree2324"
                     },
         "tests": {
             "contains": [

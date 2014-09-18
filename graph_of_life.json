@@ -15,9 +15,9 @@
     "test_source_tree": {
         "test_function": "gol_source_tree",
         "test_input": {
-            "study_id":"'pg_420'", 
-            "tree_id": "'522'", 
-            "git_sha": "'a2c48df995ddc9fd208986c3d4225112550c8452'"
+            "study_id":"pg_420", 
+            "tree_id": "522", 
+            "git_sha": "a2c48df995ddc9fd208986c3d4225112550c8452"
             },
         "tests": {
              "of_type": ["dict","Response is of wrong type"],
@@ -35,7 +35,7 @@
                  ["rank","Doesn't contain rank string"]
                  ],
              "equals": [
-                 [["'name'","'Trochilidae'"],"Fails that results contains Trochilidae"]
+                  [["name","Trochilidae"],"Fails that results contains Trochilidae"]
                  ]
         }
     }

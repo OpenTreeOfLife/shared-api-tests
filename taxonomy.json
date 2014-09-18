@@ -7,7 +7,7 @@
                 ["author","Output doesn't contain author"]
                 ],
             "equals": [
-                [["'weburl'","'https://github.com/OpenTreeOfLife/opentree/wiki/Open-Tree-Taxonomy'"],"Fails that results contains correct URL"]     
+                [["weburl","https://github.com/OpenTreeOfLife/opentree/wiki/Open-Tree-Taxonomy"],"Fails that results contains correct URL"]     
                 ]
         }
     },
@@ -18,8 +18,8 @@
             "contains": [
                         ["lica","Output doesn't contain lica"]
                         ],
-            "equals": [
-                        [["'lica']['rank'","'order'"],"Fails that results contains the correct rank"]  
+            "deep_equals": [
+                        [ [["lica","rank"],"order"], "Fails that results contains the correct rank"]  
                       ]
         }
     },
@@ -41,7 +41,7 @@
                 ["rank","Output doesn't contain rank"]
                 ],
             "equals": [
-                [["'synonyms'","['Barnadesia', 'Barnadesia Mutis']"],"Fails that results contains correct synonyms"]
+                [["synonyms","['Barnadesia', 'Barnadesia Mutis']"],"Fails that results contains correct synonyms"]
                 ]
         }
     }

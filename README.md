@@ -62,7 +62,23 @@ Tests that a key in the response return a specific value.
 Value is an Array of Arrays.  Each inner Array contains: 
 
 ```
- ["key", "value'], "message
+ ["key", "value'], "message"
+```
+
+### deep\_equals
+
+Tests that s in the response return a specific value.
+
+Value is an Array of Arrays.  Each inner Array contains: 
+
+```
+ [["key1","key2", "key3"] "value'], "message"
+```
+
+This is is translated to the test:
+
+```
+  response[key1][key2][key3] == value
 ```
 
 ### error
@@ -101,9 +117,16 @@ Value is an Array with two values:
 At present only 'dict' is used as a type. This corresponds to a Ruby Hash.
 
 
-adding a new test
+contributing
 =================
 
-Fork the repo, add the test, and send us a pull request.
+Fork the repo, add the test, [VALIDATE THE JSON][0], and send us a pull request.
+
+[0]: http://jsonlint.com/
+
+licence
+=======
+
+BSD.
 
 

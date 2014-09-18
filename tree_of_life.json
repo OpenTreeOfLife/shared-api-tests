@@ -7,7 +7,7 @@
                         ["dict","Response is of wrong type"]
                         ,
              "equals":  [
-                        [["'nearest_taxon_mrca_rank'","'superorder'"],"Fails that nearest_taxon_mrca_rank contains superorder"]
+                        [["nearest_taxon_mrca_rank","superorder"],"Fails that nearest_taxon_mrca_rank contains superorder"]
                         ],
              "contains": [
                         ["nearest_taxon_mrca_ott_id","Doesn't contain nearest_taxon_mrca_ott_id"]
