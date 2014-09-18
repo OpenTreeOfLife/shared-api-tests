@@ -5,7 +5,7 @@
         "tests": {
              "of_type": ["dict","Response is of wrong type"],
              "deep_equals": [
-                 [['results', 0, "id"], "Barnadesia"],"Fails that results contains Barnadesia"]
+                 [[["results", 0, "id"], "Barnadesia"],"Fails that results contains Barnadesia"]
                  ],
              "contains": [
                  ["unambiguous_name_ids","Doesn't contain unambiguous_name_ids"]
@@ -19,7 +19,7 @@
         "tests": {
              "of_type": ["dict","Response is of wrong type"],
              "deep_equals": [
-                 [["results", 0, "id"] ,"Barnadesia"],"Fails that results contains Barnadesia"]
+                 [[["results", 0, "id"] ,"Barnadesia"],"Fails that results contains Barnadesia"]
                  ],
              "contains": [
                  ["unambiguous_name_ids","Doesn't contain unambiguous_name_ids"]
