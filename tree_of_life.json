@@ -18,9 +18,7 @@
         "test_function": "tol_mrca",
         "test_input": {"ott_ids":[]},
         "tests": {
-             "parameters_error": [
-                 ["ValueError","Return wrong kind of error, or did return error"]
-                 ]
+             "parameters_error": ["ValueError","Return wrong kind of error, or did return error"]
         }
     },
     "test_mrca_empty_list_input_two": {
@@ -28,9 +26,7 @@
         "test_input": {"ott_ids":[],
                        "node_ids":[]},
         "tests": {
-             "parameters_error": [
-                 ["ValueError","Return wrong kind of error, or did return error"]
-                 ]
+             "parameters_error": ["ValueError","Return wrong kind of error, or did return error"]
         }
     },
     "test_mrca_non_existing_node": {
@@ -46,9 +42,7 @@
         "test_function": "tol_mrca",
         "test_input": {},
         "tests": {
-            "parameters_error": [
-                ["ValueError","Return wrong kind of error, or did return error"]
-                ]
+            "parameters_error": ["ValueError","Return wrong kind of error, or did return error"]
         }
     },
     "test_subtree_demo": {
@@ -67,9 +61,7 @@
         "test_function": "tol_subtree",
         "test_input": {},
         "tests": {
-            "parameters_error": [
-                ["ValueError","Return wrong kind of error, or did return error"]
-                ]
+            "parameters_error": ["ValueError","Return wrong kind of error, or did return error"]
         }
     },  
     "test_induced_tree_good": {
@@ -88,9 +80,7 @@
         "test_function": "tol_induced_tree",
         "test_input": {},
         "tests": {
-            "parameters_error": [
-                ["ValueError","Return wrong kind of error, or did return error"]
-                ]
+            "parameters_error": ["ValueError","Return wrong kind of error, or did return error"]
         }
     },  
     "test_about": {
