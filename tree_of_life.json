@@ -33,9 +33,7 @@
         "test_function": "tol_mrca",
         "test_input": {"ott_ids":[4259824365942365972436598732]},
         "tests": {
-            "contains_error": [
-                ["We asked for a non-existing node and we didn't get an error"]
-                ]
+            "contains_error": ["We asked for a non-existing node and we didn't get an error"]
         }
     },
     "test_mrca_non_existing_empty": {
