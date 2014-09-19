@@ -18,7 +18,7 @@
         "test_function": "tol_mrca",
         "test_input": {"ott_ids":[]},
         "tests": {
-             "error": [
+             "parameters_error": [
                  ["ValueError","Return wrong kind of error, or did return error"]
                  ]
         }
@@ -28,7 +28,7 @@
         "test_input": {"ott_ids":[],
                        "node_ids":[]},
         "tests": {
-             "error": [
+             "parameters_error": [
                  ["ValueError","Return wrong kind of error, or did return error"]
                  ]
         }
@@ -37,8 +37,8 @@
         "test_function": "tol_mrca",
         "test_input": {"ott_ids":[4259824365942365972436598732]},
         "tests": {
-            "error": [
-                ["OpenTreeService.OpenTreeError","Return wrong kind of error, or did return error"]
+            "contains_error": [
+                ["We asked for a non-existing node and we didn't get an error"]
                 ]
         }
     },
@@ -46,7 +46,7 @@
         "test_function": "tol_mrca",
         "test_input": {},
         "tests": {
-            "error": [
+            "parameters_error": [
                 ["ValueError","Return wrong kind of error, or did return error"]
                 ]
         }
@@ -67,7 +67,7 @@
         "test_function": "tol_subtree",
         "test_input": {},
         "tests": {
-            "error": [
+            "parameters_error": [
                 ["ValueError","Return wrong kind of error, or did return error"]
                 ]
         }
@@ -88,7 +88,7 @@
         "test_function": "tol_induced_tree",
         "test_input": {},
         "tests": {
-            "error": [
+            "parameters_error": [
                 ["ValueError","Return wrong kind of error, or did return error"]
                 ]
         }
