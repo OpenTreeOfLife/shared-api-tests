@@ -63,7 +63,7 @@
         }
     },  
     "test_induced_tree_good": {
-        "test_function": "tol_induced_tree",
+        "test_function": "tol_induced_subtree",
         "test_input": {"ott_ids":[292466, 501678, 267845, 666104, 316878, 102710, 176458]},
         "tests": {
              "of_type": 
@@ -75,7 +75,7 @@
         }
     },  
     "test_induced_tree_null": {
-        "test_function": "tol_induced_tree",
+        "test_function": "tol_induced_subtree",
         "test_input": {},
         "tests": {
             "parameters_error": ["ValueError","Return wrong kind of error, or did return error"]
