@@ -23,7 +23,7 @@
                 ["matched_studies","Output doesn't contain matched_studies"]
                 ],
             "length_greater_than": [
-                [["matched_studies",1],"Fail - results are actually empty"]
+                [["matched_studies",0],"Fail - results are actually empty"]
                 ]
         }
     },
