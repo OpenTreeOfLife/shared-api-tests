@@ -16,7 +16,7 @@
     "test_find_trees": {
         "test_function": "studies_find_trees",
         "test_input": {"property":"ot:ottTaxonName",
-                       "value":"Garcinia"
+                       "value":"Anas"
                       },
         "tests": {
             "contains": [
