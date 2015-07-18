@@ -2,7 +2,7 @@
     "test_find_studies": {
         "test_function": "studies_find_studies",
         "test_input": {"property":"ot:studyId",
-                       "value":"pg_100",
+                       "value":"pg_0",
                        "verbose":"True"},
         "tests": {
             "contains": [
@@ -16,14 +16,14 @@
     "test_find_trees": {
         "test_function": "studies_find_trees",
         "test_input": {"property":"ot:ottTaxonName",
-                       "value":"Garcinia"
+                       "value":"Anas"
                       },
         "tests": {
             "contains": [
                 ["matched_studies","Output doesn't contain matched_studies"]
                 ],
             "length_greater_than": [
-                [["matched_studies",1],"Fail - results are actually empty"]
+                [["matched_studies",0],"Fail - results are actually empty"]
                 ]
         }
     },
