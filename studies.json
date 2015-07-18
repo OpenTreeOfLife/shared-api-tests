@@ -2,7 +2,7 @@
     "test_find_studies": {
         "test_function": "studies_find_studies",
         "test_input": {"property":"ot:studyId",
-                       "value":"pg_100",
+                       "value":"pg_0",
                        "verbose":"True"},
         "tests": {
             "contains": [
