@@ -45,7 +45,7 @@
         "tests": {
              "of_type": ["dict","Response is of wrong type"],
              "equals": [
-                 [["context_name","Tetrapods"],"We should have found these taxa were terapods. We didn't."]
+                 [["context_name","Animals"],"We should have found these taxa were Animals. We didn't."]
                  ],
              "contains": [
                  ["context_ott_id","Doesn't contain context_ott_id"]
